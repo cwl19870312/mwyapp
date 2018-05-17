@@ -1,0 +1,9 @@
+<div *ngIf="_show && _type != 'toast'"  class="common-mask common-mask_transparent"></div> 
+<div class="common-mask_content">
+  <div *ngIf="_show" class="common-toast" [@fadeSlideUp]="in" [class.common-toast_wider]="_type === 'toast'">
+    <div *ngIf="_type === 'loading'" class="common-toast_icon">
+      <div class="common-toast_loading"></div>
+    </div>
+    <div class="common-toast_text">{{_text}}</div>
+  </div>
+</div>

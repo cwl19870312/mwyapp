@@ -1,0 +1,6 @@
+<div class="uploader">
+  <div *ngIf="!_imgData" class="uploader-tip">+ 点击添加图片</div>
+  <img *ngIf="example && !_imgData" [src]="example" class="uploader-img">
+  <img *ngIf="_imgData" [src]="_imgData" class="uploader-img">
+  <input #imgInput class="uploader-input"  type="file" accept="Image/*" (change)="onFileChange(imgInput.files[0])">
+</div>

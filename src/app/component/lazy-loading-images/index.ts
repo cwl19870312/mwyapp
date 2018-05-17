@@ -1,0 +1,1 @@
+export { LazyLoadingImagessModule } from './lazy-loading-images.module';

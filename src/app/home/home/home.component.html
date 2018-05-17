@@ -1,0 +1,55 @@
+<div class="home-container">
+  <div class="home-header">
+    <img class="home-header-img" src="http://www.qqzhi.com/uploadpic/2014-07-27/075816657.jpg" />
+    <div class="home-header-text" routerLink="/member/update">
+      <div class="home-header-name">{{member ? member.name: '请先登录'}}</div>
+      <div class="home-header-num">编号：{{member?.id}}</div>
+    </div>
+  </div>
+
+  <div class="home-counter">
+    <div class="home-item" routerLink="/wallet">
+      <p class="home-item-title">可结算余额</p>
+      <p class="home-item-value">{{rebate_count?.rebate_allow}} 元</p>
+    </div>
+    <div class="home-item" routerLink="/member/team">
+      <p class="home-item-title">营销推广团队</p>
+      <p class="home-item-value">{{member?.children_total}} 人</p>
+    </div>
+  </div>
+
+  <div class="common-grids">
+    <div class="common-grids-title">我的业务</div>
+    <div class="common-grids-content">
+      <div class="common-grids-item" routerLink="/apply">
+        <i class="common-grids-icon icon-order"></i>
+        <p class="common-grids-text">申卡记录</p>
+      </div>
+      <div class="common-grids-item" routerLink="/member/info">
+        <i class="common-grids-icon icon-record"></i>
+        <p class="common-grids-text">申卡信息</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="common-grids">
+    <div class="common-grids-title">申卡服务</div>
+    <div class="common-grids-content">
+      <div class="common-grids-item" routerLink="/home/faq">
+        <i class="common-grids-icon icon-info"></i>
+        <p class="common-grids-text">常见问题</p>
+      </div>
+
+      <div class="common-grids-item"  routerLink="/home/about">
+        <i class="common-grids-icon icon-about"></i>
+        <p class="common-grids-text">关于我们</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="nav-item" routerLink="/index"><i class="common-icon icon-index"></i></div>
+  <div class="nav-item" routerLink="/home"><i class="common-icon icon-home"></i></div>  
+</div>

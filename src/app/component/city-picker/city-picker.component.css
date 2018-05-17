@@ -1,0 +1,25 @@
+.citylist{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.citylist li{
+    list-style: none;
+    font-size: 0.7rem;
+    padding: 0.8rem 0.8rem;
+    position: relative;
+}
+.citylist li::before{
+    content: "";
+    height: 0.5rem;
+    width: 0.5rem;
+    display: block;
+    border-width: 0.08rem 0.08rem 0 0;
+    border-color: #aaa;
+    border-style: solid;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+}

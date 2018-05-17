@@ -1,0 +1,61 @@
+<header class="common-header">
+  <a href="javascript:history.back()" class="common-header-button common-back"></a>
+  <h1 class="common-title">{{bank?.title}}信用卡申请</h1>
+</header>
+<div class="common-content common-content_panel__top">
+  <div class="common-items">
+    <div class="apply-warn">
+      <div>*请真实填写您的申请材料，以便资料审核和信用卡发放</div>
+    </div>
+
+    <div class="common-item">
+      <div class="common-item-hd">
+        <label class="common-label">姓名</label>
+      </div>
+      <div class="common-item-bd ">
+        <input type="text" placeholder="请输入您的姓名" [(ngModel)]="name">
+      </div>
+    </div>
+    <div class="common-item">
+      <div class="common-item-hd">
+        <label class="common-label">手机号</label>
+      </div>
+      <div class="common-item-bd ">
+        <input type="tel" maxlength="11" placeholder="请输入您的手机号" [(ngModel)]="phone">
+      </div>
+    </div>
+    <div class="common-item">
+      <div class="common-item-hd">
+        <label class="common-label">身份证</label>
+      </div>
+      <div class="common-item-bd ">
+        <input type="text" maxlength="18" placeholder="请输入您的身份证" [(ngModel)]="cid">
+      </div>
+    </div>
+  </div>
+
+  <div class="common-items">
+    <div class="apply-info">
+        <div>使用预设信息快速填写 <i routerLink="/member/info/create" class="apply-icon icon-add" style="float:right;"></i></div>
+        <ul>
+          <li *ngFor="let info of infoList" (click)="select(info)">
+            {{info.name}}({{info.phone}})：{{info.cid}}
+            <i class="apply-icon icon-click"></i>
+          </li>
+        </ul>
+    </div>
+    
+  </div>
+
+  <div class="common-buttonarea">
+    <button (click)="create()" class="common-button">申请</button>
+  </div>
+
+  <div class="apply-remark">
+      <p>以上内容由各大银行信用卡中心授权</p>
+      <p>温馨提示：</p> 
+      <p>1、申请主卡年龄要求18-60周岁。</p>
+      <p>2、目前只支持中国二代居民身份证进行网络申请</p> 
+  </div>
+  
+</div>

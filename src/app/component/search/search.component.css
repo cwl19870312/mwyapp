@@ -1,0 +1,45 @@
+.search {
+    height: 1.4rem;
+    line-height: 1.4rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 0.8rem;
+    font-size: 0.65rem;
+    padding-left: 1.6rem;
+    color: #888;
+    position: relative;
+}
+
+.search .search-close{
+    width: 1.6rem;
+    height: 1.4rem;
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.search .search-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: inline-block;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.6rem;
+}
+.search .search-close .common-icon_close{
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+}
+.search input{
+    background: none;
+    border: none;
+    font-size: 0.65rem;
+    outline: none;
+    width: 100%;
+    padding-right: 1.8rem;
+}
+
+    

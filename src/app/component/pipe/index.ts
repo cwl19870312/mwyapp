@@ -1,0 +1,1 @@
+export *　from './common-pipe.module'

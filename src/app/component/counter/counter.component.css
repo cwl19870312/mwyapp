@@ -1,0 +1,45 @@
+.counter {
+    display: inline-block;
+    width: 5.2rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.counter-bt {
+    width: 1.4rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+}
+
+.counter-bt_left {
+    border-right: 1px solid #ccc;
+}
+
+.counter-bt_right {
+    border-left: 1px solid #ccc;
+}
+
+.counter-bt.counter-bt_disable {
+    color: #ccc;
+}
+
+.counter-num {
+    width: 0;
+    flex: 1;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    font-size: 0.7rem;
+    border:0;
+    background: none;
+    outline: none;
+}

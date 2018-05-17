@@ -1,0 +1,6 @@
+<div class="counter">
+  <div class="counter-bt counter-bt_left" [class.counter-bt_disable]="num <= min" (click)="change(num-1)">-</div>
+  <!-- <div class="counter-num">{{num}}</div> -->
+  <input type="number" class="counter-num" [readonly]="!input" [(ngModel)]="num">
+  <div class="counter-bt counter-bt_right" [class.counter-bt_disable]="num >= max" (click)="change(num+1)">+</div>
+</div>

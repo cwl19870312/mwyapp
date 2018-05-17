@@ -1,0 +1,33 @@
+<header class="common-header common-header_qitao">
+  <a (click)="back()" class="common-header-button common-back"></a>
+  <h1 class="common-title">我的营销团队</h1>
+</header>
+<div class="common-content common-content_panel__top" [infiniteScroll]="next" (onLoad)="getNext()">
+  <div *ngIf="target" class="common-flex common-flex_center info">
+    <div class="info-img">
+      <i class="common-icon icon-head"></i>
+    </div>
+    <div class="common-flex-item info-text">
+      <div class="info-time">姓名：{{target.name | name}}</div>
+      <div class="info-time">手机号码：{{target.phone | mobile}}</div>
+      <div class="info-time">加入时间：{{target.add_date}}</div>
+      <div class="info-member">
+        <span *ngIf="target_children_count > 0">直属分享下级：{{target_children_count}}人</span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-title common-border_bottom">{{target === i ? '我' : '他'}}的营销团队</div>
+    <div class="container-content">
+      <div *ngFor="let member of teamList" (click)="setTarget(member)" class="team-item common-flex common-flex_center common-border_bottom">
+        <div class="common-flex-item">
+          <div class="team-item-nickname">{{member.name}}
+            <span class="team-item-name" *ngIf="member.phone">({{member.name | name}})</span>
+          </div>
+        </div>
+        <div *ngIf="member.children_total > 0" class="team-item-member">共同营销团队{{member.children_total}}人</div>
+      </div>
+    </div>
+    <app-loading-more [more]="next"></app-loading-more>
+  </div>
+</div>

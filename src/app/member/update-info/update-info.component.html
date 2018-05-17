@@ -1,0 +1,38 @@
+<header class="common-header">
+    <a href="javascript:history.back()" class="common-header-button common-back"></a>
+    <h1 class="common-title">{{title()}}</h1>
+  </header>
+  <div class="common-content common-content_panel__top">
+    <div class="common-items">
+      <div class="common-item">
+        <div class="common-item-hd">
+          <label class="common-label">姓名</label>
+        </div>
+        <div class="common-item-bd">
+          <input type="text" placeholder="请输入姓名" [(ngModel)]="name">
+        </div>
+      </div>
+      <div class="common-item">
+        <div class="common-item-hd">
+          <label class="common-label">手机号</label>
+        </div>
+        <div class="common-item-bd">
+          <input type="tel" maxlength="11" placeholder="请输入手机号码" [(ngModel)]="phone">
+        </div>
+      </div>
+      <div class="common-item">
+        <div class="common-item-hd">
+          <label class="common-label">身份证</label>
+        </div>
+        <div class="common-item-bd">
+          <input type="text" maxlength="18" placeholder="请输入身份证"  [(ngModel)]="cid">
+        </div>
+      </div>
+      <div class="default common-flex common-flex_center">
+        <input type="checkbox" [(ngModel)]="is_default"><span (click)="setDefault()">设为默认申卡信息</span>
+      </div>
+    </div>
+    <div class="common-buttonarea">
+      <a (click)="save()" class="common-button">保存</a>
+    </div>
+  </div>

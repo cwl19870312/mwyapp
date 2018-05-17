@@ -1,0 +1,84 @@
+.home-container{
+    font-weight: 300;
+}
+.home-header{
+    background-color: #000;
+    padding: 2rem 2.4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.home-header-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 3px solid #eee;
+}
+.home-header-text{
+    flex: 1;
+    padding-left: 0.4rem;
+}
+.home-header::after{
+    content: " ";
+    display: inline-block;
+    height: .6rem;
+    width: .6rem;
+    border-width: 1px 1px 0 0;
+    border-color: #fff;
+    border-style: solid;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-right: .6rem;
+}
+.home-header-name{
+    font-weight: 400;
+    line-height: 2rem;
+}
+.home-header-num{
+    color: #ddd;
+    font-size: 0.6rem;
+}
+
+.home-counter{
+    display: flex;
+    text-align: center;
+    background: #fff;
+    padding: 0.4rem;
+}
+.home-item{
+    flex: 1;
+}
+.home-item:first-child{
+    border-right: 1px solid #f5f5f5;
+}
+.home-item-title, .home-item-value{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.home-item-title{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #999;
+}
+.home-item-value{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffcc66;
+}
+.nav{
+    position: absolute;
+    bottom: 4rem;
+    right:2rem;
+}
+.nav-item{
+    width:2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+}
+.nav-item .common-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.3rem;
+}

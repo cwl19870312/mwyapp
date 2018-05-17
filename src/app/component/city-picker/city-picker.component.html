@@ -1,0 +1,12 @@
+<app-popup>
+  <header class="common-header">
+    <a (click)="back()" class="common-header-button common-back"></a>
+    <h1 class="common-title">{{title()}}</h1>
+    <!-- <div class="common-header-tools"></div> -->
+  </header>
+  <div #content class="common-content common-content_panel__top">
+    <ul class="citylist">
+      <li class="common-border_bottom" *ngFor="let city of showList" (click)="chose(city)">{{city.label}}</li>
+    </ul>
+  </div>
+</app-popup>

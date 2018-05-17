@@ -1,0 +1,35 @@
+.picker{
+    background: #fff;
+    width: 100%;
+    padding: 0 0.8rem;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    box-sizing: border-box;
+}
+.picker-line{
+    max-height: 16rem;
+    overflow: auto;
+    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+}
+.picker-item{
+    font-size: 0.65rem;
+    color: #222;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.picker-item.picker-item_active,
+.picker-item.picker-item_active span{
+    color: #f39701;
+}
+.picker-item span{
+    color: #888;
+}

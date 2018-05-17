@@ -1,0 +1,14 @@
+.common-content{
+    padding-top: 0.6rem;
+}
+.register{
+    color: #f39701;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
+}
+.resetPassword{
+    margin: 0.6rem 0.8rem 0;
+    font-size: 0.65rem;
+    color: #888;
+    float: right;
+}

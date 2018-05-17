@@ -1,0 +1,30 @@
+<header class="common-header">
+  <a href="javascript:history.back()" class="common-header-button common-back"></a>
+  <h1 class="common-title">申卡记录</h1>
+</header>
+<div class="common-content common-content_panel__top" [infiniteScroll]="next" (onLoad)="getNext()">
+  <div class="common-tab-items">
+    <div class="common-tab-item" [class.common-tab-item_active]="myself == 1" (click)="setMyself(1)">我申请的</div>
+    <div class="common-tab-item" [class.common-tab-item_active]="myself == 0" (click)="setMyself(0)">我推荐的</div>
+  </div>
+
+  <div class="apply-container">
+    <div class="apply-items">
+      <div *ngFor="let apply of applyList" class="apply-item">
+        <div class="apply-item-header">
+          <img src="{{apply.bank_detail.thumbnail_icon}}" /> {{apply.bank_detail.title}}
+        </div>
+        <div class="apply-item-text">
+          <div class="">{{apply.name}}({{apply.phone}})</div>
+          <div class="">{{apply.recommend}}</div>
+        </div>
+        <div class="apply-item-info">
+          <div>{{apply.add_date}}</div>
+          <div class="apply-item-info-status" [class.status-danger]="apply.inDanger()">{{apply.status_detail}}</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <app-loading-more [more]="next"></app-loading-more>
+</div>

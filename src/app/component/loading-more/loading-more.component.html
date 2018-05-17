@@ -1,0 +1,11 @@
+<div class="loadingMore">
+  <div *ngIf="more" class="spinner">
+    <div class="bounce1" [ngStyle]="setColor()"></div>
+    <div class="bounce2" [ngStyle]="setColor()"></div>
+    <div class="bounce3" [ngStyle]="setColor()"></div>
+  </div>
+  <div *ngIf="!more">
+    <div class="nomore" [ngStyle]="setBackground()">{{text}}</div>
+    <div class="nomore-line"></div>
+  </div>
+</div>

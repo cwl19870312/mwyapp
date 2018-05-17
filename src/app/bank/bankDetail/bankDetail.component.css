@@ -1,0 +1,57 @@
+.bank-container{
+    padding:0.4rem;
+}
+
+.bank-content img{
+    width: 100%;
+}
+
+.bank-tap{
+    position: absolute;
+    width: 100%;
+    height: 2.8rem;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    font-weight: 300;
+}
+.bank-tap-item{
+    flex: 1;
+    line-height: 2.8rem;
+}
+.bank-tap-item:last-child{
+    text-align: right;
+    margin-right: 0.5rem;
+}
+.bank-tap-buttom{
+    padding: 0.4rem 2rem;
+    background: coral;
+    border: 1px solil #ddd;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.help-container{
+    margin: 0.4rem 0.8rem;
+}
+
+.apply-help{
+    padding:0.4rem 0.8rem;
+    
+}
+
+.apply-help-content img{
+    width:100%;
+}
+
+.apply-help-title{
+    border-bottom: 1px solid #ddd;
+    line-height: 2rem;
+}
+
+.apply-help img{
+    width: 100%;
+}

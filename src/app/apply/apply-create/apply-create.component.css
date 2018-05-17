@@ -1,0 +1,32 @@
+.apply-warn{
+    padding: 0.4rem 0.8rem;
+    color: #666;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+.apply-info{
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    color: #666;
+}
+
+.apply-icon{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top:0.2rem;
+}
+
+.apply-remark{
+    padding: 0.4rem 0.8rem;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    color: #666;
+}
+.apply-remark p{
+    margin-top: 0.1rem;
+    margin-bottom: 0.rem;
+}

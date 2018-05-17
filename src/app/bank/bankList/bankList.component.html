@@ -1,0 +1,16 @@
+<div class="bank-container">
+  <div *ngFor="let bank of bankList" [routerLink]="['/bank', bank.uid]" class="bank-item">
+    <div class="bank-img">
+      <img src="{{bank.thumbnail_icon}}" />
+    </div>
+    <div class="bank-features">
+        <div class="bank-features-inner">{{bank.features}}</div>      
+    </div>
+    <div class="bank-title">
+      {{bank.title}}
+    </div>
+    <div class="bank-info">
+      {{bank.info}}
+    </div>
+  </div>
+</div>

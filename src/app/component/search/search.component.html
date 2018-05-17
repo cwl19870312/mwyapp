@@ -1,0 +1,5 @@
+<div class="search">
+  <span class="search-icon common-icon_search"></span>
+  <span (click)="clear()" *ngIf="text?.length > 0" class="search-close"><span class="common-icon_close"></span></span>
+  <input type="text" [placeholder]="placeholder" [(ngModel)]="text" (input)="input($event)">
+</div>

@@ -1,0 +1,61 @@
+.account{
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    height: 6.6rem;
+    width: 100%;
+    background: #000;
+    padding: 0 0.6rem;
+}
+.account-item{
+    color: #fff;
+}
+.account-money{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight:300;
+}
+.account-title{
+    font-size: 0.65rem;
+}
+.account-pay{
+    margin-left: 10%;
+    font-size: 0.7rem;
+    line-height: 1.6rem;
+    height: 1.6rem;
+    border-radius: 3px;
+    width: 4.4rem;
+    text-align: center;
+    background: #fff;
+    color: #139aee;
+}
+.common-content{
+    top: 8.8rem;
+    background: #fff;
+}
+.rebate{
+    padding: 0.8rem 0;
+}
+.rebate-title{
+    font-size: 0.7rem;
+}
+.rebate-money{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #222;
+}
+.rebate-time{
+    font-size: 0.65rem;
+    color: #888;
+}
+.rebate-status{
+    font-size: 0.65rem;
+    color: #139aee;
+}
+
+.container{
+    padding: 0.4rem 0.8rem;
+}
+.container-title{
+    line-height: 2rem;
+}

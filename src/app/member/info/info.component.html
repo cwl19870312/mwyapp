@@ -1,0 +1,30 @@
+<header class="common-header">
+  <a href="javascript:history.back()" class="common-header-button common-back"></a>
+  <h1 class="common-title">申卡信息</h1>
+</header>
+<div class="common-content common-content_panel__top">
+  <div class="info-container">
+    <div *ngFor="let info of infoList" class="info-item">
+      <div class="info-inner">
+        <p class="info-inner-name">{{info.name}}</p>
+        <p class="info-inner-phone">{{info.phone}}</p>
+      </div>
+      <div class="info-cid">
+        {{info.cid}}
+      </div>
+      <div class="info-action">
+        <p class="info-action-default">
+            <input *ngIf="info.is_default" checked disabled  type="checkbox"><span *ngIf="info.is_default">默认申卡信息</span>
+        </p>
+        <p class="info-action-edit">
+            <span [routerLink]="['/member/info', info.uid]">编辑</span>
+        </p>
+           
+      </div>
+    </div>
+    <div class="common-clearfix"></div>
+    <div class="common-buttonarea">
+      <a routerLink="/member/info/create" class="common-button">添加新信息</a>
+    </div>
+  </div>
+</div>

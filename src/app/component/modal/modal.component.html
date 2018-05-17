@@ -1,0 +1,12 @@
+<div *ngIf="_show" class="common-mask" [@fade]="in"></div> 
+<div *ngIf="_show" class="common-mask_content">
+  <div class="common-modal" [@zoom]="in">
+      <div *ngIf="_title" class="common-modal-title">{{_title}}</div>
+      <div *ngIf="_text" class="common-modal-text">{{_text}}</div>
+      <ng-content></ng-content>
+      <div class="common-modal-buttons">
+          <a *ngFor="let button of _buttons;let i = index" class="common-modal-button" 
+          [class.common-modal-button_main]="button.main" (click)="buttonClick(i)">{{button.text}}</a>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<header class="common-header">
+    <a href="javascript:history.back()" class="common-header-button common-back"></a>
+    <h1 class="common-title">{{bank?.title}} 信用卡介绍</h1>
+  </header>
+
+<div *ngIf="bank" class="bank-container">
+  <div class="bank-content" [innerHTML]="bank.content_describe">
+  </div>
+  <div class="bank-tap">
+    <div class="bank-tap-item" (click)="popupUp()">
+      &nbsp;<i class="common-icon icon-help"></i>申卡指南
+    </div>
+    <div class="bank-tap-item">
+      <button *ngIf="bank" [routerLink]="['/apply', bank.uid]" class="bank-tap-buttom">立即申请</button>
+    </div>
+  </div>
+  <app-popup>
+      <div class="help-container">
+          <div class="apply-help">
+              <div class="apply-help-title">
+                {{bank.title}} 申请指南
+                <i (click)="popupDown()" class="common-icon icon-close" style="float:right;"></i>
+              </div>
+
+              <div class="apply-help-content" [innerHTML]="bank.content_apply">
+
+              </div>
+              
+            </div>
+      </div>
+    </app-popup>
+</div>
+
+
+

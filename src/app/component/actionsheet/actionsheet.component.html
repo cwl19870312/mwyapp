@@ -1,0 +1,7 @@
+<div *ngIf="actived" class="common-mask" [@fade]="in" ></div>
+<div class="common-mask_content">
+  <div *ngIf="actived" class="common-actionsheet" [@fadeSlideUp]="in">
+    <div class="common-actionsheet_close" (click)="hide()"></div>
+    <ng-content></ng-content>
+  </div>
+</div>

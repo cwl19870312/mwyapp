@@ -1,0 +1,6 @@
+<div class="picker" [ngStyle]="height">
+  <div *ngFor="let line of shopList;let i = index" class="picker-line">
+    <div *ngFor="let item of line;let x = index" class="picker-item" [class.picker-item_active]="item.active"
+    (click)="pick(i,x)">{{item.text}}<span>{{item.tip}}</span></div>
+  </div>
+</div>

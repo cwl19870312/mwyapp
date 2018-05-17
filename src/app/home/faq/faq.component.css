@@ -1,0 +1,9 @@
+.faq-container{
+    padding: 0.4rem 0.8rem;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+.faq-container img{
+    width: 100%;
+}
